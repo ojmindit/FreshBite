@@ -16,7 +16,7 @@ import 'vueperslides/dist/vueperslides.css'
                     What Our Customers Say <br> About Us
                 </h2>
                 <div class="static h-[11rem] md:h-[10rem] md:absolute xl:bottom-[100px] mb-[0.125rem]  w-full md:w-[50vw]  mt-[2rem] ">
-                    <vueper-slides :visible-slides="1.535" :breakpoints="{ 768: { visibleSlides: 1, } }" :arrows="false" :gap="3"
+                    <vueper-slides class="no-shadow widthofcarosel" :visible-slides="1.535" :breakpoints="{ 768: { visibleSlides: 1, } }" :arrows="false" :gap="3"
                         :dragging-distance="10">
                         <vueper-slide v-for="i in 5" :key="i">
                             <template #content>
