@@ -16,7 +16,7 @@ import 'vueperslides/dist/vueperslides.css'
                     What Our Customers Say <br> About Us
                 </h2>
                 <div class="static h-[11rem] md:h-[10rem] md:absolute xl:bottom-[100px] mb-[0.125rem]  w-full md:w-[50vw]  mt-[2rem] ">
-                    <vueper-slides class="no-shadow widthofcarosel" :visible-slides="1.535" :breakpoints="{ 768: { visibleSlides: 1, } }" :arrows="false" :gap="3"
+                    <vueper-slides :visible-slides="1.535" :breakpoints="{ 768: { visibleSlides: 1, } }" :arrows="false" :gap="3"
                         :dragging-distance="10">
                         <vueper-slide v-for="i in 5" :key="i">
                             <template #content>
@@ -55,44 +55,17 @@ import 'vueperslides/dist/vueperslides.css'
 </template>
 
 <style >
-/* .widthof{
-
-    width: 100rem;
-} */
 .widthofcarosel {
-
     width: 100%;
 }
-
 .vueperslides__inner {
     position: relative;
     width: 100%;
     height: 9.125rem;
 }
-
-@media (min-width: 768px) {
-    .vueperslides__inner {
-        height: 9.525rem;
-    }
-}
-
-@media (min-width: 1280px) {
-    .vueperslides__inner {
-        height: 13.125rem;
-    }
-}
-
 .vueperslides__parallax-wrapper {
     height: 161px;
 }
-
-/* @media (min-width: 768px) {
-    .vueperslides__parallax-wrapper {
-        height: auto;
-    }
-} */
-
-
 .vueperslides__bullet .default {
     background-color: #FFF9EA;
     border: none;
@@ -101,74 +74,52 @@ import 'vueperslides/dist/vueperslides.css'
     width: 6px;
     height: 6px;
 }
-
-@media (min-width: 768px) {
-    .vueperslides__bullet .default {
-        width: 7px;
-        height: 7px;
-    }
-}
-
-@media (min-width: 1280px) {
-    .vueperslides__bullet .default {
-        width: 8px;
-        height: 8px;
-    }
-}
-
-.vueperslides__bullets {
-    bottom: -34px;
-    height: 15px;
-}
-
-.vueperslides__bullet {
-    margin: 2px;
-}
-
-
-
-@media (min-width: 768px) {
-    .vueperslides__bullet {
-    margin: 4px;
-}
-}
-
-@media (min-width: 768px) {
-    .vueperslides__bullets {
-        bottom: -10px;
-    }
-}
-
-/* @media (min-width: 852px) {
-    .vueperslides__bullets {
-        bottom: -20px;
-    }
-} */
-
-/* @media (min-width: 1024px) {
-    .vueperslides__bullets {
-        bottom: -80px;
-    }
-} */
-
-@media (min-width: 1280px) {
-    .vueperslides__bullets {
-        top: 0;
-    }
-
-    .vueperslides__bullet {
-        margin: 1.5em 0.6em;
-    }
-}
-
 .vueperslides__bullet--active .default {
     background-color: #FFCB45;
 }
-
+.vueperslides__bullet {
+    margin: 2px;
+}
 .vueperslides__bullet span {
     display: block;
     color: #fff;
     font-size: 10px;
     opacity: 0.8;
+}
+.vueperslides__bullets {
+    bottom: -34px;
+    height: 15px;
+}
+
+@media (min-width: 768px) {
+    .vueperslides__inner {
+        height: 9.525rem;
+    }
+    .vueperslides__bullet .default {
+        width: 7px;
+        height: 7px;
+    }
+    .vueperslides__bullet {
+        margin: 4px;
+    }
+    .vueperslides__bullets {
+        bottom: -10px;
+    }
+}
+
+@media (min-width: 1280px) {
+    .vueperslides__inner {
+        height: 13.125rem;
+    }
+    .vueperslides__bullet {
+        margin: 1.5em 0.6em;
+    }
+    .vueperslides__bullet .default {
+        width: 8px;
+        height: 8px;
+    }
+    .vueperslides__bullets {
+        top: 0;
+    }
 }
 </style>
