@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@font-face {
+  font-family: ANEKODIA;
+  src: url(./fonts/AnekOdia-Regular.ttf);
+}
+
+@font-face {
+  font-family: readex;
+  src: url(./fonts/Readex_Pro/static/ReadexPro-Regular.ttf);
+}
