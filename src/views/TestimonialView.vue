@@ -1,7 +1,3 @@
-<script setup>
-import { VueperSlides, VueperSlide } from 'vueperslides'
-import 'vueperslides/dist/vueperslides.css'
-</script>
 <template>
     <section class="relative w-full overflow-hidden">
         <div class=" container mx-auto px-[1rem] md:px-[2rem] xl:px-[3.125rem] flex flex-col md:flex-row justify-center items-center md:justify-start md:items-start mt-[2rem] md:mt-[3.5rem] xl:mt-[5rem] ">
@@ -53,6 +49,11 @@ import 'vueperslides/dist/vueperslides.css'
         </div>
     </section>
 </template>
+
+<script setup>
+import { VueperSlides, VueperSlide } from 'vueperslides'
+import 'vueperslides/dist/vueperslides.css'
+</script>
 
 <style >
 .widthofcarosel {

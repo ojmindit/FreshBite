@@ -1,6 +1,3 @@
-<script setup>
-const classForIcon = "rounded-[1.9375rem] bg-[#fff] hover:bg-[#FFCB45] w-[1.8125rem] h-[2rem] p-[0.525rem] xl:w-[2.8125rem] xl:h-[3rem] xl:p-[0.625rem] flex justify-center items-center"
-</script>
 <template>
     <section class="w-full">
         <div class="bg-[rgb(255,249,234)] pt-[1.6rem] md:pt-[3rem] xl:pt-[6.1875rem] mt-[2rem] md:mt-[3.5rem] xl:mt-[5rem]">
@@ -88,6 +85,11 @@ const classForIcon = "rounded-[1.9375rem] bg-[#fff] hover:bg-[#FFCB45] w-[1.8125
         </div>
     </section>
 </template>
+
+<script setup>
+const classForIcon = "rounded-[1.9375rem] bg-[#fff] hover:bg-[#FFCB45] w-[1.8125rem] h-[2rem] p-[0.525rem] xl:w-[2.8125rem] xl:h-[3rem] xl:p-[0.625rem] flex justify-center items-center"
+</script>
+
 <style scoped>
 #shadow {
     box-shadow: 0px 4px 12px 0px rgba(29, 29, 29, 0.15);

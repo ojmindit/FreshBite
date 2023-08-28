@@ -1,13 +1,3 @@
-<script setup>
-// import { RouterView } from 'vue-router'
-// import HeaderComponet from '../components/HeaderComponet.vue';
-import FooterComponet from '../components/FooterComponent.vue';
-import HowItWorks from '../views/HowItWorks.vue';
-import TestimonialView from './TestimonialView.vue';
-import MenuView from './MenuView.vue';
-
-</script>
-
 <template>
     <div id="ourhome" class="bg-[#FFF]">
         <section class="relative pt-[1rem] pb-[2rem] xl:py-[6.25rem] w-full bg-[#FFF9EA] flex flex-col items-center">
@@ -93,3 +83,12 @@ import MenuView from './MenuView.vue';
         </div> -->
     </div>
 </template>
+<script setup>
+// import { RouterView } from 'vue-router'
+// import HeaderComponet from '../components/HeaderComponet.vue';
+import FooterComponet from '../components/FooterComponent.vue';
+import HowItWorks from '../views/HowItWorks.vue';
+import TestimonialView from './TestimonialView.vue';
+import MenuView from './MenuView.vue';
+
+</script>
